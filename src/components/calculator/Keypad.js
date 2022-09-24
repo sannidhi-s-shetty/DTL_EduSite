@@ -142,7 +142,10 @@ const Keypad = (props) => {
         syseq
       </button>
       <button className="func" value="expansion" onClick={() => props.updateCalc("expa(")}>
-        expa
+        exp
+      </button>
+      <button className="func" value="roots(" onClick={() => props.updateCalc("roots(")}>
+        roots
       </button>
       <button
         className="reset"
