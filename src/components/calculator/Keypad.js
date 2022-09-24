@@ -125,6 +125,12 @@ const Keypad = (props) => {
       <button className="func" value="factorisation" onClick={() => props.updateCalc("fact(")}>
         fact
       </button>
+      <button className="func" value="systemOfEquations" onClick={() => props.updateCalc("syseq(")}>
+        syseq
+      </button>
+      <button className="func" value="expansion" onClick={() => props.updateCalc("expa(")}>
+        expa
+      </button>
       <button
         className="reset"
         id="reset-key"
