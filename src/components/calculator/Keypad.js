@@ -21,11 +21,14 @@ const Keypad = (props) => {
       <button className="key" value="9" onClick={() => props.updateCalc("9")}>
         9
       </button>
+      <button className="operator" value="(" onClick={() => props.updateCalc("(")}>
+        (
+      </button>
+      <button className="operator" value=")" onClick={() => props.updateCalc(")")}>
+        )
+      </button>
       <button className="del" id="del" onClick={props.del}>
         DEL
-      </button>
-      <button className="equals-key" id="equals-key" value="=" onClick={()=> props.updateCalc("=")}>
-        =
       </button>
       <button className="key" value="4" onClick={() => props.updateCalc("4")}>
         4
@@ -43,6 +46,20 @@ const Keypad = (props) => {
       >
         +
       </button>
+      <button
+        className="operator"
+        value="-"
+        onClick={() => props.updateCalc("-")}
+      >
+        -
+      </button>
+      <button
+        className="operator"
+        value="/"
+        onClick={() => props.updateCalc("/")}
+      >
+        /
+      </button>
       <button className="key" value="1" onClick={() => props.updateCalc("1")}>
         1
       </button>
@@ -54,30 +71,23 @@ const Keypad = (props) => {
       </button>
       <button
         className="operator"
-        value="-"
-        onClick={() => props.updateCalc("-")}
-      >
-        -
-      </button>
-      <button className="key" value="." onClick={() => props.updateCalc(".")}>
-        .
-      </button>
-      <button className="key" value="0" onClick={() => props.updateCalc("0")}>
-        0
-      </button>
-      <button
-        className="operator"
-        value="/"
-        onClick={() => props.updateCalc("/")}
-      >
-        /
-      </button>
-      <button
-        className="operator"
         value="*"
         onClick={() => props.updateCalc("*")}
       >
         *
+      </button>
+      <button className="key" value="." onClick={() => props.updateCalc(".")}>
+        .
+      </button>
+      <button
+        className="operator"
+        value="**"
+        onClick={() => props.updateCalc("**")}
+      >
+        **
+      </button>
+      <button className="key" value="0" onClick={() => props.updateCalc("0")}>
+        0
       </button>
       <button
         className="operator"
@@ -100,24 +110,14 @@ const Keypad = (props) => {
       >
         <i>z</i>
       </button>
-      <button
-        className="operator"
-        value="**"
-        onClick={() => props.updateCalc("**")}
-      >
-        **
+      <button className="equals-key" id="equals-key" value="=" onClick={()=> props.updateCalc("=")}>
+        =
       </button>
       <button className="func" value="integral(" onClick={() => props.updateCalc("integral(")}>
         int
       </button>
       <button className="func" value="d(" onClick={() => props.updateCalc("d(")}>
         der
-      </button>
-      <button className="operator" value="(" onClick={() => props.updateCalc("(")}>
-        (
-      </button>
-      <button className="operator" value=")" onClick={() => props.updateCalc(")")}>
-        )
       </button>
       <button className="func" value="simplify" onClick={() => props.updateCalc("sim(")}>
         sim
