@@ -32,7 +32,7 @@ export default function Calculator() {
       if (calc.length > 7) {
         displayValue.style.fontSize = "2.5rem";
       }
-      if (calc.length === 11 && !operations.includes(value)) {
+      if (calc.length === 50 && !operations.includes(value)) {
         displayValue.style.width = "fit-content";
         displayValue.style.overflow = "hidden";
         return setCalc(calc.toString());
