@@ -107,7 +107,7 @@ export default function Calculator() {
   });
   return (
     <main>
-      <article className="calculator">
+      <article className="calculator col">
         <Screen ref={ref} calc={calc} />
         <Keypad
           updateCalc={updateCalc}
@@ -116,6 +116,9 @@ export default function Calculator() {
           clear={clear}
           onKeyDown={onKeyDown}
         /> 
+      </article>
+      <article className="Draw col">
+      <Draw/>
       </article>
     </main>
   );

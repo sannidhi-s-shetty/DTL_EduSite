@@ -91,10 +91,17 @@ header {
   width: 638px;
   margin-bottom: 5rem;
 }
+.Draw {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 538px;
+  margin-bottom: 5rem;
+}
 .calculator * {
   transition: background-color 1s, color 0.1s ease-in-out;
 }
-
 .calculator button {
   border: none;
   font-size: 32px;
@@ -154,6 +161,9 @@ header {
 @media screen and (max-width: 600px) {
   header,
   .calculator {
+    width: 90%;
+  }
+  .Draw {
     width: 90%;
   }
 }
