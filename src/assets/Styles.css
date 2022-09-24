@@ -34,12 +34,15 @@ header {
   flex-direction: row;
   justify-content: space-between;
   max-width: 100%;
-  width: 538px;
-  margin: 0 auto;
-  margin-top: 5.5rem;
+  width: 1285px;
+  height: 70px;
+  /* margin: 0 auto; */
+  /* margin-top: 5.5rem; */
+  margin: 100px;
   padding: 1rem 0;
   align-items: center;
 }
+
 .themes {
   display: flex;
   flex-direction: row;

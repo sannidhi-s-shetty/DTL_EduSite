@@ -10,6 +10,11 @@ body {
 header {
   color: ${({ theme }) => theme.colors.headerText};
 }
+
+.home {
+  color: ${({ theme }) => theme.colors.headerText};
+}
+
 .keypad {
   background-color:  ${({ theme }) => theme.colors.keypad};
 }
@@ -22,6 +27,19 @@ header {
     background-color: ${({ theme }) => theme.colors.numberKeyHover};
   }
 }
+
+.mainBtns {
+  border-radius: 5px;
+  height: 40px;
+  width: 70px;
+  background-color: ${({ theme }) => theme.colors.key};
+  ${'' /* box-shadow: 0 4px 0 0 ${({ theme }) => theme.colors.keyShadow}; */}
+  color: ${({ theme }) => theme.colors.keyText};
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.numberKeyHover};
+  }
+}
+
 .screen {
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.screen};
