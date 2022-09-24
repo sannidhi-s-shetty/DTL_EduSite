@@ -36,7 +36,7 @@ export default function Calculator() {
         displayValue.style.width = "fit-content";
         displayValue.style.overflow = "hidden";
         return setCalc(calc.toString());
-      } else if (calc.length === 11 && operations.includes(value)) {
+      } else if (calc.length === 50 && operations.includes(value)) {
         console.log("hi");
       } else {
         console.error();
