@@ -102,10 +102,19 @@ const Keypad = (props) => {
       </button>
       <button
         className="operator"
-        value="**"
-        onClick={() => props.updateCalc("**")}
+        value="^"
+        onClick={() => props.updateCalc("^")}
       >
-        **
+        ^
+      </button>
+      <button className="operator" value="!" onClick={() => props.updateCalc("!")}>
+        !
+      </button>
+      <button className="operator" value="cos" onClick={() => props.updateCalc("cos(")}>
+        cos
+      </button>
+      <button className="operator" value="sin" onClick={() => props.updateCalc("sin(")}>
+        sin
       </button>
       <button className="func" value="integral(" onClick={() => props.updateCalc("integral(")}>
         int
@@ -119,10 +128,10 @@ const Keypad = (props) => {
       <button className="operator" value=")" onClick={() => props.updateCalc(")")}>
         )
       </button>
-      <button className="func" value="simplify" onClick={() => props.updateCalc("sim(")}>
+      <button className="func" value="simplify" onClick={() => props.updateCalc("simplify(")}>
         sim
       </button>
-      <button className="func" value="factorisation" onClick={() => props.updateCalc("fact(")}>
+      <button className="func" value="factorisation" onClick={() => props.updateCalc("factor(")}>
         fact
       </button>
       <button className="func" value="systemOfEquations" onClick={() => props.updateCalc("syseq(")}>
