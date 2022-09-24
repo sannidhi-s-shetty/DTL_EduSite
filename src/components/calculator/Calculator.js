@@ -11,7 +11,7 @@ var Algebrite = require('algebrite')
 export default function Calculator() {
   const [calc, setCalc] = useState("");
   const [calculated, setCalculated] = useState(false);
-  const operations = ["/", "*", "+", "-", ".","**"];
+  const operations = ["/", "*", "+", "-", ".","**","integral","d"];
   const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   const variable = ["x","y","z"];
   const ref = React.createRef();
@@ -107,7 +107,7 @@ export default function Calculator() {
   });
   return (
     <main>
-      <article className="calculator">
+      <article className="calculator col">
         <Screen ref={ref} calc={calc} />
         <Keypad
           updateCalc={updateCalc}
@@ -116,6 +116,9 @@ export default function Calculator() {
           clear={clear}
           onKeyDown={onKeyDown}
         /> 
+      </article>
+      <article className="Draw col">
+      <Draw/>
       </article>
     </main>
   );
