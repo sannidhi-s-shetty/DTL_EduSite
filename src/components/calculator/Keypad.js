@@ -107,7 +107,7 @@ const Keypad = (props) => {
       >
         **
       </button>
-      <button className="func" value="integral" onClick={() => props.updateCalc("int(")}>
+      <button className="func" value="integral(" onClick={() => props.updateCalc("int(")}>
         int
       </button>
       <button className="func" value="derivative" onClick={() => props.updateCalc("der(")}>
