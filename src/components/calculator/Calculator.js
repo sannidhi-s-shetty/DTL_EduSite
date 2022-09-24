@@ -67,9 +67,9 @@ export default function Calculator() {
 
   // function which returns the result
   const calculate = () => {
-    if (eval(calc) === undefined) {
-      return;
-    }
+    // if (eval(calc) === undefined) {
+    //   return;
+    // }
     setCalculated(true);
     // setCalc(eval(calc).toString());
     setCalc(Algebrite.eval(calc).toString());
