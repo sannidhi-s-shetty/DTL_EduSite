@@ -120,7 +120,7 @@ header {
   display: grid;
   row-gap: 1.9rem;
   column-gap: 1.3rem;
-  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(6, 1fr) / repeat(5, 1fr);
   grid-auto-flow: row;
   padding: 2rem;
   border-radius: 5px;
@@ -137,13 +137,17 @@ header {
 }
 #del,
 #reset-key,
-#equals-key {
+#equals-key,
+#solve{
   font-size: 1.5rem;
+}
+#solve{
+  padding: 0.3rem;
 }
 #reset-key {
   grid-column: 1 / span 2;
 }
-#equals-key {
+#solve {
   grid-column: 3 / span 2;
 }
 

@@ -72,7 +72,7 @@ export default function Calculator() {
     }
     setCalculated(true);
     // setCalc(eval(calc).toString());
-    setCalc(Algebrite.eval(calc).toString());
+    setCalc(Algebrite.eval('integral(x^3)').toString());
     // setCalc("hey")
   };
   const clear = () => {

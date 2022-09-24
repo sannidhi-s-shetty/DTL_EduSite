@@ -24,6 +24,9 @@ const Keypad = (props) => {
       <button className="del" id="del" onClick={props.del}>
         DEL
       </button>
+      <button className="equals-key" id="equals-key" value="=" onClick={()=> props.updateCalc("=")}>
+        =
+      </button>
       <button className="key" value="4" onClick={() => props.updateCalc("4")}>
         4
       </button>
@@ -104,6 +107,18 @@ const Keypad = (props) => {
       >
         **
       </button>
+      <button className="func" value="integral" onClick={() => props.updateCalc("int(")}>
+        int
+      </button>
+      <button className="func" value="derivative" onClick={() => props.updateCalc("der(")}>
+        der
+      </button>
+      <button className="operator" value="(" onClick={() => props.updateCalc("(")}>
+        (
+      </button>
+      <button className="operator" value=")" onClick={() => props.updateCalc(")")}>
+        )
+      </button>
       <button
         className="reset"
         id="reset-key"
@@ -112,13 +127,8 @@ const Keypad = (props) => {
       >
         RESET
       </button>
-      <button
-        className="equals-key"
-        id="equals-key"
-        value="="
-        onClick={props.calculate}
-      >
-        =
+      <button className="solve" id="solve" onClick={props.calculate}>
+        SOLVE
       </button>
     </section>
     </>

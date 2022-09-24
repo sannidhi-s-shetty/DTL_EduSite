@@ -27,7 +27,7 @@ header {
   background-color: ${({ theme }) => theme.colors.screen};
   color: ${({ theme }) => theme.colors.screenText};
 }
-.del, .reset {
+.del, .reset, .solve,.func{
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.actionKey};
   box-shadow: 0 4px 0 0 ${({ theme }) => theme.colors.actionKeyShadow};
@@ -36,7 +36,7 @@ header {
     background-color: ${({ theme }) => theme.colors.actionKeyHover};
   }
 }
-.equals-key {
+.equals-key,.func {
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.equalsKey};
   box-shadow: 0 4px 0 0 ${({ theme }) => theme.colors.equalsKeyShadow};
