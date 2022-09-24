@@ -2,12 +2,18 @@ import { useState } from "react";
 import React from "react";
 import { useEffect } from "react";
 import Screen from "./Screen";
+import Draw from "../footer/Footer";
 import Keypad from "./Keypad";
+
+var Algebrite = require('algebrite')
+
+
 export default function Calculator() {
   const [calc, setCalc] = useState("");
   const [calculated, setCalculated] = useState(false);
-  const operations = ["/", "*", "+", "-", "."];
+  const operations = ["/", "*", "+", "-", ".","**"];
   const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+  const variable = ["x","y","z"];
   const ref = React.createRef();
 
   const updateCalc = (value) => {
@@ -59,12 +65,15 @@ export default function Calculator() {
     setCalc(calc + value);
   };
 
+  // function which returns the result
   const calculate = () => {
     if (eval(calc) === undefined) {
       return;
     }
     setCalculated(true);
-    setCalc(eval(calc).toString());
+    // setCalc(eval(calc).toString());
+    setCalc(Algebrite.eval(calc).toString());
+    // setCalc("hey")
   };
   const clear = () => {
     setCalculated(false);
@@ -106,7 +115,7 @@ export default function Calculator() {
           del={del}
           clear={clear}
           onKeyDown={onKeyDown}
-        />
+        /> 
       </article>
     </main>
   );

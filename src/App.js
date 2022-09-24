@@ -11,6 +11,7 @@ import { basic } from "./styledComponents/Theme.styled";
 //Componnets
 import Header from "./components/header/Header";
 import Calculator from "./components/calculator/Calculator";
+import Draw from "./components/footer/Footer";
 
 export default function App() {
   const [selectedTheme, setSelectedTheme] = useState(basic);
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="/calculator" exact element={<Calculator />} />
         </Routes>
       </BrowserRouter>
+      <Draw/>
     </ThemeProvider>
   );
 }

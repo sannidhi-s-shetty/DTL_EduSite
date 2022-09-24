@@ -1,8 +1,10 @@
 // const Keypad = (props, ref) => {
 //   return (
 // import React from "react";
+import Draw from "../footer/Footer";
 const Keypad = (props) => {
   return (
+    <>
     <section className="keypad">
       <button
         className="key"
@@ -69,10 +71,38 @@ const Keypad = (props) => {
       </button>
       <button
         className="operator"
-        value="x"
+        value="*"
         onClick={() => props.updateCalc("*")}
       >
-        x
+        *
+      </button>
+      <button
+        className="operator"
+        value="x"
+        onClick={() => props.updateCalc("x")}
+      >
+        <i>x</i>
+      </button>
+      <button
+        className="operator"
+        value="y"
+        onClick={() => props.updateCalc("y")}
+      >
+        <i>y</i>
+      </button>
+      <button
+        className="operator"
+        value="z"
+        onClick={() => props.updateCalc("z")}
+      >
+        <i>z</i>
+      </button>
+      <button
+        className="operator"
+        value="**"
+        onClick={() => props.updateCalc("**")}
+      >
+        **
       </button>
       <button
         className="reset"
@@ -91,6 +121,7 @@ const Keypad = (props) => {
         =
       </button>
     </section>
+    </>
   );
 };
 export default Keypad;
