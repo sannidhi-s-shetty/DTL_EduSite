@@ -122,23 +122,26 @@ const Keypad = (props) => {
       <button className="func" value="d(" onClick={() => props.updateCalc("d(")}>
         der
       </button>
+      <button className="func" value="simplify" onClick={() => props.updateCalc("simplify(")}>
+        sim
+      </button>
+      <button className="func" value="factorial(" onClick={() => props.updateCalc("factorial(")}>
+        fact
+      </button>
       <button className="operator" value="(" onClick={() => props.updateCalc("(")}>
         (
       </button>
       <button className="operator" value=")" onClick={() => props.updateCalc(")")}>
         )
       </button>
-      <button className="func" value="simplify" onClick={() => props.updateCalc("simplify(")}>
-        sim
-      </button>
-      <button className="func" value="factorisation" onClick={() => props.updateCalc("factor(10!)")}>
-        fact
-      </button>
       <button className="func" value="systemOfEquations" onClick={() => props.updateCalc("syseq(")}>
         syseq
       </button>
       <button className="func" value="expansion" onClick={() => props.updateCalc("expa(")}>
-        expa
+        exp
+      </button>
+      <button className="func" value="roots(" onClick={() => props.updateCalc("roots(")}>
+        roots
       </button>
       <button
         className="reset"
