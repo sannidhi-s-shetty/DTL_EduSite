@@ -131,7 +131,7 @@ const Keypad = (props) => {
       <button className="func" value="simplify" onClick={() => props.updateCalc("simplify(")}>
         sim
       </button>
-      <button className="func" value="factorisation" onClick={() => props.updateCalc("factor(")}>
+      <button className="func" value="factorisation" onClick={() => props.updateCalc("factor(10!)")}>
         fact
       </button>
       <button className="func" value="systemOfEquations" onClick={() => props.updateCalc("syseq(")}>
