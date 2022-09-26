@@ -14,6 +14,7 @@ import Header from "./components/header/Header";
 import Home from "./home";
 import Calculator from "./components/calculator/Calculator";
 import Draw from "./components/footer/Footer";
+import Algebra from "./components/Content/algebra";
 
 export default function App() {
   const [selectedTheme, setSelectedTheme] = useState(basic);
@@ -50,6 +51,9 @@ export default function App() {
         <Routes>
           <Route path="/home" exact element={<>
           <Home />
+          </>} />
+          <Route path="/algebra" exact element={<>
+          <Algebra />
           </>} />
           <Route path="/calculator" exact element={<>
           <Calculator />

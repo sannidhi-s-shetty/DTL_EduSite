@@ -46,18 +46,18 @@ header {
 .themes {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 0.3rem;
   align-items: flex-end;
 }
 .themes p {
-  font-size: 0.75rem;
+  margin-left: 20px;
   letter-spacing: 1px;
 }
 .theme-toggle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   font-weight: 0.9rem;
 }
 .theme-number,
