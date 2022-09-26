@@ -7,13 +7,13 @@ import { useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 // import { basic } from "./styledComponents/Theme.styled.js";
 import { basic } from "./styledComponents/Theme.styled";
-import { Redirect } from "react"; 
+// import { Redirect } from "react"; 
 
 //Componnets
 import Header from "./components/header/Header";
 import Home from "./home";
 import Calculator from "./components/calculator/Calculator";
-import Draw from "./components/footer/Footer";
+// import Draw from "./components/footer/Footer";
 
 export default function App() {
   const [selectedTheme, setSelectedTheme] = useState(basic);

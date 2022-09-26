@@ -1,7 +1,7 @@
 // const Keypad = (props, ref) => {
 //   return (
 // import React from "react";
-import Draw from "../footer/Footer";
+// import Draw from "../footer/Footer";
 const Keypad = (props) => {
   return (
     <>
