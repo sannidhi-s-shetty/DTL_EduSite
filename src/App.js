@@ -13,8 +13,9 @@ import { basic } from "./styledComponents/Theme.styled";
 import Header from "./components/header/Header";
 import Home from "./home";
 import Calculator from "./components/calculator/Calculator";
-import Draw from "./components/footer/Footer";
 import Algebra from "./components/Content/algebra";
+import Algebrainfo from "./components/Content/algebraInfo";
+import AlgebraTricks from "./components/Content/algebraTricks";
 
 export default function App() {
   const [selectedTheme, setSelectedTheme] = useState(basic);
@@ -54,6 +55,12 @@ export default function App() {
           </>} />
           <Route path="/algebra" exact element={<>
           <Algebra />
+          </>} />
+          <Route path="/algebra-tricks" exact element={<>
+          <AlgebraTricks />
+          </>} />
+          <Route path="/algebra-info" exact element={<>
+          <Algebrainfo />
           </>} />
           <Route path="/calculator" exact element={<>
           <Calculator />
