@@ -16,6 +16,7 @@ import Calculator from "./components/calculator/Calculator";
 import Algebra from "./components/Content/algebra";
 import Algebrainfo from "./components/Content/algebraInfo";
 import AlgebraTricks from "./components/Content/algebraTricks";
+import Quiz from "./quiz";
 
 export default function App() {
   const [selectedTheme, setSelectedTheme] = useState(basic);
@@ -64,6 +65,9 @@ export default function App() {
           </>} />
           <Route path="/calculator" exact element={<>
           <Calculator />
+          </>} />
+          <Route path="/quiz" exact element={<>
+          <Quiz />
           </>} />
         </Routes>
       </BrowserRouter>

@@ -6,6 +6,9 @@ const Header = ({ HandleThemeChange }) => {
     const handleClick1 = () => {
         navigate("././home");
     }
+    const handleClick3 = () => {
+      navigate("../quiz");
+  }
 
     const handleClick2 = () => {
       navigate("./calculator");
@@ -14,6 +17,7 @@ const Header = ({ HandleThemeChange }) => {
     <nav className="navbar">
       <div>
         <button onClick={handleClick1} type="button" className="mainBtns">Home</button>
+        <button onClick={handleClick3} type="button" className="mainBtns">Quiz</button>
         <div className="dropdown">
           <button type="button" className="mainBtns">Algebra</button>
           <div className="dropdown-content">
