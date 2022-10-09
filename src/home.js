@@ -1,9 +1,38 @@
 import React from "react";
+import poster from "./images/poster.png"
+import { MantineProvider } from '@mantine/core';
+import { BackgroundImage, Card, Image, Text, Box } from '@mantine/core';
 function Home() {
     return (
         <div  className="home">
-            <h1>Welcome !!!</h1>
-            <img src="./public/poster.png" width="500" height="600" alt="Poster"></img>
+        <MantineProvider withGlobalStyles withNormalizeCSS>
+        
+    <Card
+      shadow="sm"
+      p="xl"
+      component="a"
+      href=""
+      target="_blank"
+    >
+      <Card.Section>
+        <Image
+          src={poster}
+          height={600}
+          alt="poster"
+        />
+      </Card.Section>
+
+      <Text weight={500} size="lg" mt="md">
+        Welcome to ALGEBRA HELPER
+      </Text>
+
+      <Text mt="xs" color="dimmed" size="sm">
+        Ultimate guide to solve Algebra problems
+      </Text>
+    </Card>
+
+       
+        </MantineProvider>
         </div>
     );
 }

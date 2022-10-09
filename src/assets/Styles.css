@@ -175,3 +175,11 @@ header {
     padding: 1rem;
   }
 }
+.home {
+  background-image: url("../images/bg.jpg");
+  }
+
+.poster {
+display:flex;
+width:75%;
+}
