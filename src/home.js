@@ -30,14 +30,15 @@ function Home() {
       <Text mt="xs" color="dimmed" size="sm">
         Ultimate guide to solve Algebra problems
       </Text>
+      <div className="video-container">
+                <iframe title = "video1" src="https://www.youtube.com/embed/k3evtUkE66c" className="video-layout"></iframe>
+                </div>
     </Card>
 
        
         </MantineProvider>
         </div>
-        <div className="video-container">
-                <iframe title = "video1" src="https://www.youtube.com/embed/szovCVjZK_k" className="video-layout"></iframe>
-                </div>
+        
     );
 }
 
