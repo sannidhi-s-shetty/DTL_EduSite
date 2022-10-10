@@ -7,6 +7,7 @@ function Home() {
         <div  className="home">
         <MantineProvider withGlobalStyles withNormalizeCSS>
         
+        
     <Card
       shadow="sm"
       p="xl"
@@ -34,6 +35,9 @@ function Home() {
        
         </MantineProvider>
         </div>
+        <div className="video-container">
+                <iframe title = "video1" src="https://www.youtube.com/embed/szovCVjZK_k" className="video-layout"></iframe>
+                </div>
     );
 }
 
