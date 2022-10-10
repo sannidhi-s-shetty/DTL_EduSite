@@ -3,39 +3,39 @@ import "./assets/QuizStyles.css"
 export default function Quiz() {
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'Solve for x : x + 15 = 3',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: '18', isCorrect: false },
+				{ answerText: '12', isCorrect: false },
+				{ answerText: '-12', isCorrect: true },
+				{ answerText: '6', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'Solve for y: y – 13 = –3',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: '-10', isCorrect: false },
+				{ answerText: '10', isCorrect: true },
+				{ answerText: '3', isCorrect: false },
+				{ answerText: '2', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'Solve for x: 8 – x = –4',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: '12', isCorrect: true },
+				{ answerText: '4', isCorrect: false },
+				{ answerText: '-12', isCorrect: false },
+				{ answerText: '8', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'Solve for y: –3 – y = 7',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
+				{ answerText: '10', isCorrect: false },
 				{ answerText: '4', isCorrect: false },
 				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: '-10', isCorrect: true },
 			],
 		},
 	];
